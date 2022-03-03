@@ -1,0 +1,39 @@
+@import './colors.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: $dark_txt;
+}
+
+li {
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+@mixin lightblue-tag {
+    color: $blue_txt;
+    border: 1px solid $lightblueborder_btn;
+    background-color: $lightblue_btn;
+}
