@@ -1,5 +1,27 @@
 @import './colors.scss';
 
+//mixin
+@mixin lightblue-tag {
+    color: $blue_txt;
+    border: 1px solid $lightblueborder_btn;
+    background-color: $lightblue_btn;
+}
+
+@mixin blue-button {
+    color: $white_txt;
+    background-color: $blue_btn;
+    font-size: 1rem;
+    border: none;
+}
+
+@mixin transparent-button {
+    color: $blue_txt;
+    background-color: transparent;
+    border: 1px solid $blue_btn;
+    font-size: 1rem;
+}
+
+//General
 * {
     margin: 0;
     padding: 0;
@@ -32,8 +54,35 @@ li {
     }
 }
 
-@mixin lightblue-tag {
-    color: $blue_txt;
-    border: 1px solid $lightblueborder_btn;
-    background-color: $lightblue_btn;
+//buttons
+.blue-btn {
+    @include blue-button;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+
+    &:hover {
+        box-shadow: 0 2px 4px $lightblueborder_btn;
+        cursor: pointer;
+        transform: scale(1.01)
+    }
+}
+
+.transparent-btn {
+    @include transparent-button;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+
+    &:hover {
+        box-shadow: 0 2px 4px $lightblueborder_btn;
+        cursor: pointer;
+        transform: scale(1.01)
+    }
+}
+
+.round-btn {
+    border-radius: 100vh;
+}
+
+.big-btn {
+    width: 100%;
 }
