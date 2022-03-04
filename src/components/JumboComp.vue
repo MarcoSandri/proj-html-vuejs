@@ -77,6 +77,7 @@ export default {
 
                     button {
                         margin-right: 1rem;
+                        margin-bottom: 1rem;
                     }
                 }
     

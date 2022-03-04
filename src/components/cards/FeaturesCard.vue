@@ -31,6 +31,7 @@ export default {
         border: 1px solid $lightblueborder_btn;
         padding: 2rem;
         border-radius: 10px;
+        margin-bottom: 1rem;
         width: 270px;
         position: relative;
         overflow: hidden;

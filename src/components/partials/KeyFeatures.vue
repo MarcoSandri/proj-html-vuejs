@@ -63,5 +63,6 @@ export default {
     .features {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 </style>
