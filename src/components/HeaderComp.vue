@@ -121,6 +121,7 @@ export default {
                         text-transform: uppercase;
                         color: $menu_txt;
                         margin: 0 1rem;
+                        font-weight: 500;
     
                         &#active {
                             color: $blue_txt;

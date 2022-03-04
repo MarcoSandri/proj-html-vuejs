@@ -1,5 +1,7 @@
 @import './colors.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
 //mixin
 @mixin lightblue-tag {
     color: $blue_txt;
@@ -29,7 +31,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Fredoka', sans-serif;
 }
 
 .container {
@@ -49,6 +51,7 @@ h4,
 h5 {
     color: $dark_txt;
     margin: 2rem 0;
+    font-weight: 500;
 }
 
 h1 {
@@ -85,7 +88,7 @@ p {
 //buttons
 .blue-btn {
     @include blue-button;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
     border-radius: 6px;
 
     &:hover {
@@ -97,7 +100,7 @@ p {
 
 .transparent-btn {
     @include transparent-button;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
     border-radius: 6px;
 
     &:hover {
