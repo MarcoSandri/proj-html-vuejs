@@ -157,6 +157,11 @@ export default {
                         box-shadow: 0px 2px 4px $lightblueborder_btn;
 
                         margin: 0 0.25rem;
+
+                        &:hover {
+                            background-color: $blue_txt;
+                            color: $white_txt;
+                        }
                     }
                 }
 

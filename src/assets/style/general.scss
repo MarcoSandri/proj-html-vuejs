@@ -37,12 +37,26 @@ body {
     margin: auto;
 }
 
+section {
+    padding: 2rem 0;
+}
+
+// Typeface
 h1,
 h2,
 h3,
 h4,
 h5 {
     color: $dark_txt;
+    margin: 2rem 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
 }
 
 li {
@@ -52,6 +66,20 @@ li {
         text-decoration: none;
         color: inherit;
     }
+}
+
+p {
+    color: $lightgray_txt;
+    margin: 2rem 0;
+}
+
+
+.highlight {
+    color: $blue_txt;
+}
+
+.green {
+    color: $green;
 }
 
 //buttons

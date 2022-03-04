@@ -74,17 +74,7 @@ export default {
                         padding: 0.1rem 0.5rem;
                         font-size: 0.75rem
                     }
-    
-                    h1 {
-                        font-size: 3em;
-                        margin: 2rem 0;
-                    }
-    
-                    p {
-                        color: $lightgray_txt;
-                        margin: 2rem 0;
-                    }
-    
+
                     button {
                         margin-right: 1rem;
                     }
