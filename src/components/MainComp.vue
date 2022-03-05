@@ -4,6 +4,7 @@
             <KeyFeatures />
             <QuickstartComp />
             <ToolsComp />
+            <PlansComp />
         </div>
     </main>
 </template>
@@ -12,13 +13,15 @@
 import KeyFeatures from '../components/partials/KeyFeatures.vue'
 import QuickstartComp from '../components/partials/QuickstartComp.vue'
 import ToolsComp from '../components/partials/ToolsComp.vue'
+import PlansComp from '../components/partials/PlansComp.vue'
 
 export default {
     name: "MainComp",
     components: {
         KeyFeatures,
         QuickstartComp,
-        ToolsComp
+        ToolsComp,
+        PlansComp
     }
 
 }

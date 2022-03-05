@@ -20,23 +20,8 @@
         <!-- Bottom -->
         <div class="companies">
             <div class="container">
-                <div class="company">
-                    <img src="../assets/img/companies/amazon.svg" alt="Amazon">
-                </div>
-                <div class="company">
-                    <img src="../assets/img/companies/google.svg" alt="Google">
-                </div>
-                <div class="company">
-                    <img src="../assets/img/companies/lenovo.svg" alt="lenovo">
-                </div>
-                <div class="company">
-                    <img src="../assets/img/companies/paypal.svg" alt="paypal">
-                </div>
-                <div class="company">
-                    <img src="../assets/img/companies/shopify.svg" alt="shopify">
-                </div>
-                <div class="company">
-                    <img src="../assets/img/companies/spotify.svg" alt="spotify">
+                <div class="company" v-for="(company,index) in companies" :key="index">
+                    <img :src="require('../assets/img/companies/' + company.url)" :alt="company.name">
                 </div>
             </div>
         </div>
@@ -45,7 +30,38 @@
 
 <script>
 export default {
-    name: 'JumboComp'
+    name: 'JumboComp',
+    data() {
+        return {
+            companies: [
+                {
+                    name: 'Amazon',
+                    url: "amazon.svg"
+                },
+                {
+                    name: 'Google',
+                    url: "google.svg"
+                },
+                {
+                    name: 'Lenovo',
+                    url: "lenovo.svg"
+                },
+                {
+                    name: 'Paypal',
+                    url: "paypal.svg"
+                },
+                {
+                    name: 'Shopify',
+                    url: "shopify.svg"
+                },
+                {
+                    name: 'Spotify',
+                    url: "spotify.svg"
+                },
+                
+            ]
+        }
+    }
 }
 </script>
 

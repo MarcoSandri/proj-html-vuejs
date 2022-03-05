@@ -32,7 +32,7 @@ export default {
         align-items: center;
 
         .info {
-            width: 40%;
+            width: 50%;
 
             ul {
                 color: $lightgray_txt;
@@ -42,7 +42,7 @@ export default {
         }
 
         .image {
-            width: 50%;
+            width: 40%;
             img {
                 object-fit: contain;
                 width: 100%;
