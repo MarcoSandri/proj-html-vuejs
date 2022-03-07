@@ -3,6 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 
 //mixin
+@mixin standard-button {
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+
+    &:hover {
+        box-shadow: 0 2px 4px $lightblueborder_btn;
+        cursor: pointer;
+        transform: scale(1.01)
+    }
+}
+
 @mixin lightblue-tag {
     color: $blue_txt;
     border: 1px solid $lightblueborder_btn;
@@ -45,13 +56,11 @@ section {
 
 // Typeface
 h1,
-h2,
-h3,
-h4,
-h5 {
+h2{
     color: $dark_txt;
-    margin: 2rem 0;
+    margin: 0.5em 0;
     font-weight: 500;
+    line-height: 1.5em;
 }
 
 h1 {
@@ -60,6 +69,13 @@ h1 {
 
 h2 {
     font-size: 2em;
+}
+
+h3 {
+    font-size: 1.25em;
+    color: $white_txt;
+    margin-bottom: 0.5em;
+    font-weight: 500;
 }
 
 li {
@@ -73,10 +89,11 @@ li {
 
 p {
     color: $lightgray_txt;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
+    line-height: 1.5rem;
 }
 
-
+// Color accents
 .highlight {
     color: $blue_txt;
 }
@@ -91,27 +108,13 @@ p {
 
 //buttons
 .blue-btn {
+    @include standard-button;
     @include blue-button;
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
-
-    &:hover {
-        box-shadow: 0 2px 4px $lightblueborder_btn;
-        cursor: pointer;
-        transform: scale(1.01)
-    }
 }
 
 .transparent-btn {
+    @include standard-button;
     @include transparent-button;
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
-
-    &:hover {
-        box-shadow: 0 2px 4px $lightblueborder_btn;
-        cursor: pointer;
-        transform: scale(1.01)
-    }
 }
 
 .round-btn {
@@ -126,10 +129,10 @@ p {
     background-color: $darkblue_btn;
     border: 1px solid $blue_txt;
     color: $blue_txt;
-    border-radius: 6px;
-    padding: 0.75rem 1rem;
     font-size: 1.25rem;
     box-shadow: 0 2px 3px $blue_txt;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
 
     &:hover {
         cursor: pointer;

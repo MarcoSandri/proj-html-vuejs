@@ -33,11 +33,13 @@
                     <h3>Newsletter</h3>
                     <p>Sign up and receive the latest tips via email.</p>
                     <span class="tag">Write your email <span class="red">*</span> </span>
-                    <div class="input">
-                        <font-awesome-icon icon="fa-regular fa-envelope" class="icon"/> 
-                        <input type="text" placeholder="Your email: ">
-                    </div>
-                    <button class="dark-btn">Subscribe</button>
+                    <form>
+                        <div class="input">
+                            <font-awesome-icon icon="fa-regular fa-envelope" class="icon"/> 
+                            <input type="email" placeholder="Your email: ">
+                        </div>
+                        <input type="submit" class="dark-btn big-btn" value="Subscribe">
+                    </form>
                 </div>
             </div>
         </div>
@@ -196,12 +198,7 @@ export default {
                 padding: 2rem 0;
                 display: flex;
                 justify-content: space-between;
-    
-                h3 {
-                    color: $white_txt;
-                    margin-top: 0;
-                }
-    
+                
                 .landrick {
                     width: 30%;
     
@@ -233,10 +230,11 @@ export default {
                 
                 .lists {
                     display: flex;
+                    justify-content: space-around;
+                    flex: 1;
     
                     ul {
-                        margin-right: 5rem;
-    
+                        
                         li {
                             color: $lightgray_txt;
                             line-height: 1.75rem;
@@ -247,6 +245,7 @@ export default {
                 .newsletter {
                     display: flex;
                     flex-direction: column;
+                    width: 25%;
     
                     .tag {
                         color: $lightgray_txt;
@@ -255,7 +254,7 @@ export default {
                     .input {
                         position: relative;
     
-                        input {
+                        input[type=email] {
                             background-color: $darkinput_bg;
                             border: none;
                             border-radius: 10px;
@@ -298,7 +297,7 @@ export default {
 
                     a {
                         width: 30px;
-                        margin-right: 5px;
+                        margin-left: 5px;
 
                         img {
                             object-fit: contain;

@@ -40,6 +40,11 @@ export default {
         width: 270px;
         position: relative;
         overflow: hidden;
+        transition: 200ms;
+
+        &:hover {
+            transform: translate(0, -10px);
+        }
 
         &:hover .background{
             display: block;

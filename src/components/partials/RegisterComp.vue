@@ -9,10 +9,10 @@
             </div>
 
             <!-- Email form -->
-            <div class="input">
-                <input type="text" placeholder="Email Address">
-                <button class="blue-btn round-btn">Get Started</button>
-            </div>
+            <form class="input">
+                <input type="email" placeholder="Email Address">
+                <input type="submit" class="blue-btn round-btn" value="Get Started">
+            </form>
         </div>
 
     </section>
@@ -36,7 +36,7 @@ export default {
         .input {
             position: relative;
 
-            input {
+            input[type=email] {
                 width: 100%;
                 padding: 1rem 2rem;
                 border-radius: 100vh;
@@ -45,7 +45,7 @@ export default {
                 font-size: 1rem;
             }
 
-            button {
+            input[type=submit] {
                 position: absolute;
                 right: 7px;
                 top: 50%;
