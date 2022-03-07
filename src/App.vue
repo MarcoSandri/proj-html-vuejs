@@ -4,6 +4,7 @@
     <JumboComp />
     <MainComp />
     <FooterComp />
+    <SettingsComp class="settings" :id="options" @settings="toggleSettings"/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import HeaderComp from './components/HeaderComp.vue'
 import JumboComp from './components/JumboComp.vue'
 import MainComp from './components/MainComp.vue'
 import FooterComp from './components/FooterComp.vue'
+import SettingsComp from './components/SettingsComp.vue'
 
 export default {
   name: 'App',
@@ -19,7 +21,21 @@ export default {
     HeaderComp,
     JumboComp,
     MainComp,
-    FooterComp
+    FooterComp,
+    SettingsComp
+  },
+  data() {
+    return {
+      options: 'hide',
+    }
+  },
+  methods: {
+    toggleSettings(settings) {
+      if(settings) {
+        this.options = "show";
+      }
+      else this.options = "hide";
+    }
   }
 }
 </script>
@@ -29,6 +45,21 @@ export default {
 
   #app {
     min-width: 1300px;
+
+    .settings {
+      position: fixed;
+      top: 20%;
+      transition: 200ms;
+
+      &#show {
+        left: 0;
+      }
+
+      &#hide {
+        left: -200px;
+      }
+
+    }
   }
 
 </style>

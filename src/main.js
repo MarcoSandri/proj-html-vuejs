@@ -7,7 +7,7 @@ import App from './App.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import specific icons */
-import { faMagnifyingGlass, faChevronDown, faLayerGroup, faMaximize, faChevronRight, faArrowRight, faArrowUp} from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass, faChevronDown, faLayerGroup, faMaximize, faChevronRight, faArrowRight, faArrowUp, faGear} from '@fortawesome/free-solid-svg-icons'
 
 import { faGithub, faStackOverflow, faChromecast, faFacebookF, faInstagram, faTwitter, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
 
@@ -17,7 +17,7 @@ import { faUser, faSquarePlus, faCircleCheck, faEnvelope } from '@fortawesome/fr
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* add icons to the library */
-library.add(faGithub, faStackOverflow, faUser, faMagnifyingGlass, faChevronDown, faLayerGroup, faChromecast, faMaximize, faSquarePlus, faChevronRight, faCircleCheck, faArrowRight,  faFacebookF, faInstagram, faTwitter, faLinkedinIn, faEnvelope, faArrowUp)
+library.add(faGithub, faStackOverflow, faUser, faMagnifyingGlass, faChevronDown, faLayerGroup, faChromecast, faMaximize, faSquarePlus, faChevronRight, faCircleCheck, faArrowRight,  faFacebookF, faInstagram, faTwitter, faLinkedinIn, faEnvelope, faArrowUp, faGear)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
