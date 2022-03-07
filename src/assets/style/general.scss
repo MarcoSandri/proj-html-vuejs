@@ -85,6 +85,10 @@ p {
     color: $green;
 }
 
+.red {
+    color: $red;
+}
+
 //buttons
 .blue-btn {
     @include blue-button;
@@ -116,4 +120,19 @@ p {
 
 .big-btn {
     width: 100%;
+}
+
+.dark-btn {
+    background-color: $darkblue_btn;
+    border: 1px solid $blue_txt;
+    color: $blue_txt;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    box-shadow: 0 2px 3px $blue_txt;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.01)
+    }
 }

@@ -34,4 +34,8 @@ export default {
     @import '../assets/style/colors.scss';
     @import '../assets/style/general.scss';
 
+    main {
+        padding: 2rem 0;
+    }
+
 </style>
