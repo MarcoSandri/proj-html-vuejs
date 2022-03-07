@@ -33,7 +33,7 @@
                     <h3>Newsletter</h3>
                     <p>Sign up and receive the latest tips via email.</p>
                     <span class="tag">Write your email <span class="red">*</span> </span>
-                    
+
                     <!-- Email form -->
                     <form>
                         <div class="input">
@@ -56,6 +56,12 @@
                     <img :src="require('../assets/img/' + card.url)" :alt="card.name">
                 </a>
             </div>
+        </div>
+
+        <div class="up">
+            <a href="#">
+                <font-awesome-icon icon="fa-solid fa-arrow-up" />
+            </a>
         </div>
     </div>
   </footer>
@@ -283,6 +289,7 @@ export default {
 
         .bottom {
             border-top: 1px solid $blue_txt;
+            position: relative;
 
             .container {
                 padding: 2rem 0;
@@ -306,6 +313,25 @@ export default {
                             width: 100%;
                         }
                     }
+                }
+            }
+
+            .up {
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translate(0, -50%);
+                width: 30px;
+                height: 30px;
+                background-color: $blue_txt;
+                border-radius: 6px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 2px 3px $blue_txt;
+
+                a {
+                    color: $white_txt;
                 }
             }
         }
