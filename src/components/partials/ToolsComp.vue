@@ -1,5 +1,7 @@
 <template>
   <section>
+
+      <!-- Info -->
       <div class="info">
             <h2>Build tools and extensive documentation</h2>
             <p>You can combine all the Landrick templates into a single one, you can take a component from the Application theme and use it in the Website.</p>
@@ -10,6 +12,8 @@
             </ul>
             <button class="blue-btn">Read More <font-awesome-icon icon="fa-solid fa-arrow-right" /></button>
       </div>
+
+      <!-- Image -->
       <div class="image">
           <img src="../../assets/img/1.png" alt="">
       </div>

@@ -1,25 +1,33 @@
 <template>
-  <div class="plan">
-      <div class="banner" v-if="best">
-        <div class="triangle-up"></div>
-        <div class="triangle-down"></div>
-      </div>
-      <div class="info">
-        <span class="tag">{{tag}}</span>
-        <h1>{{price}}</h1>
-        <p>{{frequency}}</p>
-        <p>{{description}}</p>
-      </div>
-      <div class="features">
-          <ul>
-              <li v-for="(feature,index) in features" :key="index"><font-awesome-icon icon="fa-regular fa-circle-check" class="highlight"/> {{feature}} </li>
-          </ul>
-      </div>
-      <div class="action">
-          <button class="blue-btn big-btn">Buy Now</button>
-          <div class="disclaimer">*No credit card required</div>
-      </div>
-  </div>
+    <div class="plan">
+
+        <!-- Banner - solo se il piano è il migliore -->
+        <div class="banner" v-if="best">
+            <div class="triangle-up"></div>
+            <div class="triangle-down"></div>
+        </div>
+
+        <!-- Info -->
+        <div class="info">
+            <span class="tag">{{tag}}</span>
+            <h1>{{price}}</h1>
+            <p>{{frequency}}</p>
+            <p>{{description}}</p>
+        </div>
+
+        <!-- Lista features -->
+        <div class="features">
+            <ul>
+                <li v-for="(feature,index) in features" :key="index"><font-awesome-icon icon="fa-regular fa-circle-check" class="highlight"/> {{feature}} </li>
+            </ul>
+        </div>
+
+        <!-- Button per compare il piano -->
+        <div class="action">
+            <button class="blue-btn big-btn">Buy Now</button>
+            <div class="disclaimer">*No credit card required</div>
+        </div>
+    </div>
 </template>
 
 <script>

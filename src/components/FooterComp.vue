@@ -1,38 +1,46 @@
 <template>
-  <footer>   
-    <div class="top">
-        <div class="container">
-            <div class="landrick">
-                <div class="logo">
-                    <img src="../assets/img/logo-light.png" alt="logo">
+    <footer>
+
+        <!-- Footer Top -->
+        <div class="top">
+            <div class="container">
+
+                <!-- Landrick info -->
+                <div class="landrick">
+                    <div class="logo">
+                        <img src="../assets/img/logo-light.png" alt="logo">
+                    </div>
+                    <p>Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                    <div class="social">
+                        <a v-for="(social,index) in socials" :key="index" :href="social.url">  
+                            <font-awesome-icon :icon="social.icon" />
+                        </a>
+                    </div>
                 </div>
-                <p>Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p>
-                <div class="social">
-                    <a v-for="(social,index) in socials" :key="index" :href="social.url">  
-                        <font-awesome-icon :icon="social.icon" />
-                    </a>
+
+                <!-- Link Lists -->
+                <div class="lists">
+                    <ul v-for="(list, index) in lists" :key="index">
+                        <h3>{{list.name}}</h3>
+                        <li v-for="(item,index) in list.list" :key="index">
+                            <a :href="item.url"> <font-awesome-icon icon="fa-solid fa-chevron-right" /> {{item.name}}</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="lists">
-                <ul v-for="(list, index) in lists" :key="index">
-                    <h3>{{list.name}}</h3>
-                    <li v-for="(item,index) in list.list" :key="index">
-                        <a :href="item.url"> <font-awesome-icon icon="fa-solid fa-chevron-right" /> {{item.name}}</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="newsletter">
-                <h3>Newsletter</h3>
-                <p>Sign up and receive the latest tips via email.</p>
-                <span class="tag">Write your email <span class="red">*</span> </span>
-                <div class="input">
-                    <font-awesome-icon icon="fa-regular fa-envelope" class="icon"/> 
-                    <input type="text" placeholder="Your email: ">
+                
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Sign up and receive the latest tips via email.</p>
+                    <span class="tag">Write your email <span class="red">*</span> </span>
+                    <div class="input">
+                        <font-awesome-icon icon="fa-regular fa-envelope" class="icon"/> 
+                        <input type="text" placeholder="Your email: ">
+                    </div>
+                    <button class="dark-btn">Subscribe</button>
                 </div>
-                <button class="dark-btn">Subscribe</button>
             </div>
         </div>
-    </div>
 
     <div class="bottom">
         <div class="container">
@@ -181,7 +189,6 @@ export default {
 
     footer {
         background-color: $blue_bg;
-        color: $white_txt;
 
         .top {
 

@@ -1,8 +1,14 @@
 <template>
     <section>
         <div class="register">
-            <h2>Want to be among the first to find out?</h2>
-            <p>Start working with <span class="highlight">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+
+            <!-- Info -->
+            <div class="info">
+                <h2>Want to be among the first to find out?</h2>
+                <p>Start working with <span class="highlight">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+            </div>
+
+            <!-- Email form -->
             <div class="input">
                 <input type="text" placeholder="Email Address">
                 <button class="blue-btn round-btn">Get Started</button>

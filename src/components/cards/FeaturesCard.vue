@@ -1,11 +1,16 @@
 <template>
     <div class="card">
+        <!-- Icon on hover -->
         <font-awesome-icon :icon="icon" class="background"/>
+        <!-- Icon on top -->
         <div class="icon">
             <font-awesome-icon :icon="icon" />
         </div>
+        <!-- Title -->
         <span>{{title}}</span>
+        <!-- Description -->
         <p>{{description}}</p>
+        <!-- Link to full page -->
         <a :href="fullDescription" class="highlight">Read More <font-awesome-icon icon="fa-solid fa-chevron-right" /></a>
     </div>
 </template>

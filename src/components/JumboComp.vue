@@ -4,6 +4,7 @@
         <!-- Top -->
         <div class="info">
             <div class="container">
+                <!-- Top Left - Jumbotron description -->
                 <div class="description">
                     <span class="label">Development</span>
                     <h1>A Complete Developer Toolset</h1>
@@ -12,12 +13,13 @@
                     <button class="transparent-btn">Documentation</button>
                     <p>Current Version: v2.6.0</p>
                 </div>
+                <!-- Top Right - Jumbotron image -->
                 <div class="image">
                     <img src="../assets/img/about.png" alt="about">
                 </div>
             </div>
         </div>
-        <!-- Bottom -->
+        <!-- Bottom - companies -->
         <div class="companies">
             <div class="container">
                 <div class="company" v-for="(company,index) in companies" :key="index">

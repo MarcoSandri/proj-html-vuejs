@@ -1,9 +1,11 @@
 <template>
     <section>
+        <!-- Info -->
         <div class="info">
             <h2>Key Features</h2>
             <p>Start working with <span class="highlight">Landrick</span> that can provide everything you neeed to generate awareness, drive traffic, connect.</p>
         </div>
+        <!-- Feature Cards -->
         <div class="features">
             <FeaturesCard v-for="(feature, index) in features" :key="index" :icon="feature.icon" :title="feature.name" :description="feature.description" :fullDescription="feature.fullDescription"/>
         </div>

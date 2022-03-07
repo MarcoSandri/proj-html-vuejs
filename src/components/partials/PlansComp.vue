@@ -1,12 +1,16 @@
 <template>
   <section>
-      <div class="info">
-        <h2>Our rates for developer from landick team</h2>
-        <p>Start working with <span class="highlight">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
-      </div>
-      <div class="plans">
-        <PlansCard v-for="(plan, index) in plans" :key="index" :tag="plan.type" :price="plan.price" :frequency="plan.frequency" :description="plan.description" :features="plan.features" :best="plan.best"/>
-      </div>
+
+    <!-- Info -->
+    <div class="info">
+      <h2>Our rates for developer from landick team</h2>
+      <p>Start working with <span class="highlight">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+    </div>
+
+    <!-- Plans cards -->
+    <div class="plans">
+      <PlansCard v-for="(plan, index) in plans" :key="index" :tag="plan.type" :price="plan.price" :frequency="plan.frequency" :description="plan.description" :features="plan.features" :best="plan.best"/>
+    </div>
   </section>
 </template>
 

@@ -1,10 +1,13 @@
 <template>
   <div class="code">
+      <!-- Selection -->
       <div class="select">
           <div class="packet" v-for="(code,index) in codes" :key="index" :class="(code.active)? 'active':''" @click="changeCode(index)">
               {{code.name}}
           </div>
       </div>
+
+      <!-- Code installation -->
       <div class="description">
           <span v-for="(line,index) in (filtered[0].install)" :key="index" :class="line.command? 'green' : '' ">{{line.line}}</span>
         </div>
@@ -109,6 +112,8 @@ export default {
         }
     },
     methods: {
+
+        // ChangeCode - Seleziona l'elemento assegnandogli true e deseleziona tutti gli altri assegnandogli false
         changeCode(index) {
             for(let i = 0; i < this.codes.length; i++) {
                 if(index == i) {
@@ -121,6 +126,7 @@ export default {
     },
     computed: {
 
+        // Filtered - Restituisce solo l'elemento selezionato con changeCode()
         filtered() {
             return this.codes.filter((code) => {
                 if(code.active) {

@@ -1,11 +1,17 @@
 <template>
     <section>
+
+        <!-- Info -->
         <div class="info">
             <span class="highlight">Quickstart</span>
             <h2>Awesome isn't it? Let's dive in!</h2>
             <p>Start working with <span class="highlight">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
         </div>
+
+        <!-- Code card -->
         <CodeCard />
+
+        <!-- List of features -->
         <ul>
             <li><font-awesome-icon icon="fa-regular fa-circle-check" class="green"/> Organize your data</li>
             <li><font-awesome-icon icon="fa-regular fa-circle-check" class="green"/> Work with any team</li>
