@@ -33,6 +33,8 @@
                     <h3>Newsletter</h3>
                     <p>Sign up and receive the latest tips via email.</p>
                     <span class="tag">Write your email <span class="red">*</span> </span>
+                    
+                    <!-- Email form -->
                     <form>
                         <div class="input">
                             <font-awesome-icon icon="fa-regular fa-envelope" class="icon"/> 
@@ -234,7 +236,7 @@ export default {
                     flex: 1;
     
                     ul {
-                        
+
                         li {
                             color: $lightgray_txt;
                             line-height: 1.75rem;
